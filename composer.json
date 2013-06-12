@@ -1,0 +1,8 @@
+{
+    "name": "routeros/core",
+    "type": "library",
+    "description": "PHP library for RouterOS API",
+    "autoload": {
+        "psr-0": {"RouterOS": "src/"}
+    }
+}
