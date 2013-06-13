@@ -1,5 +1,5 @@
 {
-    "name": "routeros/core",
+    "name": "tnoc/routeros",
     "type": "library",
     "description": "PHP library for RouterOS API",
     "autoload": {
