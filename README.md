@@ -1,4 +1,4 @@
-mikrotik_api
+RouterOS API
 ============
 
 A composer package for Mikrotik / Router OS API
