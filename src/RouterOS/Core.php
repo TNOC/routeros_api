@@ -11,7 +11,12 @@
  *    Nick Otter (otternq [at] gmail [dot] com)
  *
  * http://www.mikrotik.com
+ *
+ * Old Mikrotik Documentation:
  * http://wiki.mikrotik.com/wiki/API_PHP_class
+ *
+ * New Mikrotik Documentation:
+ * https://github.com/TNOC/routeros_api
  *
  ******************************/
 
