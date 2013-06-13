@@ -15,7 +15,7 @@
  *
  ******************************/
 
-class RouterOS
+class Core
 {
     //private $log;
 
