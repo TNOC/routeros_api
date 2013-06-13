@@ -15,8 +15,6 @@
  *
  ******************************/
 
-namespace RouterOS;
-
 class RouterOS
 {
     //private $log;
