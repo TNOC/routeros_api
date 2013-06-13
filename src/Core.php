@@ -17,7 +17,7 @@
 
 namespace RouterOS;
 
-class Core
+class RouterOS
 {
     //private $log;
 
