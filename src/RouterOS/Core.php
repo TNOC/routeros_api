@@ -11,7 +11,12 @@
  *    Nick Otter (otternq [at] gmail [dot] com)
  *
  * http://www.mikrotik.com
+ *
+ * Old Mikrotik Documentation:
  * http://wiki.mikrotik.com/wiki/API_PHP_class
+ *
+ * New Mikrotik Documentation:
+ * https://github.com/TNOC/routeros_api
  *
  ******************************/
 
@@ -19,7 +24,6 @@ namespace RouterOS;
 
 class Core
 {
-    //private $log;
 
     var $debug = false;      // Show debug information
     var $error_no;           // Variable for storing connection error number, if any
@@ -30,9 +34,14 @@ class Core
     public $port = 8728;        // Port to connect to
     var $timeout = 3;        // Connection attempt timeout and data read timeout
     var $socket;             // Variable for storing socket resource
-    
+
+    /**
+     * PSR-3 Logger Object - Tested with Monolog https://github.com/Seldaek/monolog/
+     * @var object
+     */
+    private $logger = null;
+
     public function __construct() {
-        //$this->log = new \Log(__CLASS__);
     }
     
     /**
@@ -42,12 +51,19 @@ class Core
      *
      * @return void
      */
-    function debug($text)
+    private function debug($text)
     {
-        /*if ($this->debug) {
-            $this->log->on();
-            $this->log->v($text);
-        }*/
+        if ($this->debug == true && $this->logger != null) {
+            $this->logger->log();
+        }
+    }
+
+    public function setLogger(&$logger) {
+        $this->logger = $logger;
+    }
+
+    public function getLogger() {
+        return $this->logger;
     }
   
     
