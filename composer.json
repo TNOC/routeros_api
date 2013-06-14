@@ -2,6 +2,8 @@
     "name": "tnoc/routeros",
     "type": "library",
     "description": "PHP library for RouterOS API",
+    "keywords": ["routeros","mikrotik"],
+    "homepage": "https://github.com/TNOC/routeros_api",
 
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
