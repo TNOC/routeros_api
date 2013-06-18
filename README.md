@@ -41,7 +41,18 @@ use \RouterOS;
 
 $api = new RouterOS\Core();
 
-print_r($api);
+if ($api->connect('111.111.111.111', 'LOGIN', 'PASSWORD')) {
+
+   $api->write('/interface/getall');
+
+   $READ = $api->read(false);
+   $ARRAY = $api->parse_response($READ);
+
+   print_r($ARRAY);
+
+   $api->disconnect();
+
+}
 ```
 
 Executables
@@ -49,7 +60,7 @@ Executables
 
 ###./bin/routeros-test.php
 
-routeros test is a script to test that a Mikrotik is accessable through API
+RouterOS Test is a script to test that a Mikrotik is accessable through API
 
 <b>Usage:</b>
 - `php ./bin/routeros-test.php --help`
