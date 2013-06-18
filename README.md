@@ -50,3 +50,4 @@ Examples
 Examples are from http://wiki.mikrotik.com/wiki/API_PHP_class
 
 - [Example 1](https://github.com/TNOC/routeros_api/wiki/Example-1)
+- [Example 2](https://github.com/TNOC/routeros_api/wiki/Example-2)
