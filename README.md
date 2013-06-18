@@ -44,6 +44,17 @@ $api = new RouterOS\Core();
 print_r($api);
 ```
 
+Executables
+----
+
+###./bin/routeros-test.php
+
+routeros test is a script to test that a Mikrotik is accessable through API
+
+<b>Usage:</b>
+- php ./bin/routeros-test.php --help
+- php ./bin/routeros-test.php -h 111.111.111.111 -u username
+
 Examples
 ----
 
