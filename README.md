@@ -52,8 +52,8 @@ Executables
 routeros test is a script to test that a Mikrotik is accessable through API
 
 <b>Usage:</b>
-- php ./bin/routeros-test.php --help
-- php ./bin/routeros-test.php -h 111.111.111.111 -u username
+- `php ./bin/routeros-test.php --help`
+- `php ./bin/routeros-test.php -h 111.111.111.111 -u username`
 
 Examples
 ----
