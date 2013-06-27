@@ -73,3 +73,6 @@ Examples are from http://wiki.mikrotik.com/wiki/API_PHP_class
 
 - [Example 1](https://github.com/TNOC/routeros_api/wiki/Example-1)
 - [Example 2](https://github.com/TNOC/routeros_api/wiki/Example-2)
+- [Example 3](https://github.com/TNOC/routeros_api/wiki/Example-3)
+- [Example 4](https://github.com/TNOC/routeros_api/wiki/Example-4)
+- [Example 5](https://github.com/TNOC/routeros_api/wiki/Example-5)
